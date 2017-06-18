@@ -1,0 +1,33 @@
+/*
+* @Author: lj
+* @Date:   2017-06-18 21:18:47
+* @Last Modified by:   lj
+* @Last Modified time: 2017-06-18 21:41:31
+*/
+
+button{
+	border:0;
+	background-color:black;
+	font-color:white;
+}
+.main{
+	width:100%;
+	display:flex;
+	justify-content: center;
+}
+.content{
+	width: 960px;
+}
+.little_block_content{
+	display:flex;
+	justify-content: space-between;
+}
+.little_block{
+	width:30%;
+}
+.center-img{
+	width:960px;
+}
+.blank{
+	height: 30px;
+}
