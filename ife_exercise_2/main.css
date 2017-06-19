@@ -2,13 +2,54 @@
 * @Author: lj
 * @Date:   2017-06-18 21:18:47
 * @Last Modified by:   lj
-* @Last Modified time: 2017-06-18 21:41:31
+* @Last Modified time: 2017-06-19 16:45:17
 */
 
-button{
-	border:0;
-	background-color:black;
-	font-color:white;
+nav{
+	width: 100%;
+	display:flex;
+	justify-content: center;
+}
+.nav{
+	width: 960px;
+	display:flex;
+}
+.nav img{
+	width: 50px;
+}
+.empty{
+	flex:1;
+}
+.nav a{
+	margin:10px 10px;
+	color: white;
+	font-size: 16px;
+}
+.top_image{
+	display:flex;
+	justify-content: center;
+}
+.fill_in_1,.fill_in_2{
+	background-color: rgb(45,112,121);
+	flex:1;
+}
+.banner{
+	width: 480px;
+	height: 150px;
+	background-image: url('images/top1.jpg');
+	background-size: 100%;
+}
+.top_image #top2img{
+	/*min-width:800px;*/
+	max-width: 960px;
+}
+.text1{
+	font-size:32px;
+	color:rgba(155,155,155,0.5);
+}
+.text2{
+	font-size:44px;
+	color:white;
 }
 .main{
 	width:100%;
@@ -24,10 +65,89 @@ button{
 }
 .little_block{
 	width:30%;
+	margin-top: 20px;
+	border:1px solid #B4B4B4;
+	padding: 0 10px;
+}
+.little_block h3{
+	font-size: 48px;
+}
+.little_block p{
+	font-size: 16px;
+	text-align: left;
+}
+.little_block .sub_title{
+	font-size: 24px;
+}
+
+.little_block img{
+	float:right;
+	max-height: 80px;
+	max-width: 80px;
+	position: relative;
+	top:20px;
 }
 .center-img{
-	width:960px;
+	min-width:960px;
+}
+.center-img img{
+	width: 100%;
 }
 .blank{
 	height: 30px;
+}
+.nav-tabs li{
+	font-size: 24px;
+}
+.table_content p{
+	font-size: 18px;
+}
+.table th,.table .aside{
+	font-weight:bold;
+	font-size:18px;
+	text-align: center;
+	vertical-align: middle;
+	height: 50px;
+}
+.table td{
+	font-size: 14px;
+	width: 240px;
+	height: 50px;
+	text-align: center;
+	vertical-align: middle;
+}
+.table .yellow{
+	background-color: #EAE8E8;
+}
+.form_column{
+	display: flex;
+	flex-wrap: nowrap;
+}
+.form-content{
+	width: 500px;
+	height: 200px;
+	background-image: url("images/form-background.jpg");
+	background-size: 100%;
+	flex:1;
+}
+.form-content input{
+	display: block;
+	margin-left:50px;
+	margin-top: 20px;
+}
+.form-content .submit{
+	display:inline;
+	/*margin-left: 20px;*/
+	background-color: #9AC1F6;
+
+}
+.form-content .submit :hover{
+	border-bottom:solid 1px #333;
+}
+.hands{
+	width: 400px;
+}
+footer{
+	font-size:14px;
+	text-align: center;
 }

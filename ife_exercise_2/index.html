@@ -7,64 +7,58 @@
         <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     </head>
     <body>
-    	<div class="nav">
     	<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
-    		<img src="images/logo.jpg" alt="logo">
-    		<a href="index.html">HOME</a>
-    		<div class="btn-group">
-			  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			    PRODUCT <span class="caret"></span>
-			  </button>
-			  <ul class="dropdown-menu">
-			    <li><a href="#">Action</a></li>
-			    <li><a href="#">Another action</a></li>			    
-			  </ul>
-			</div>
-			<div class="btn-group">
-			  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			    SUPPORT <span class="caret"></span>
-			  </button>
-			  <ul class="dropdown-menu">
-			    <li><a href="#">Action</a></li>
-			    <li><a href="#">Another action</a></li>			    
-			  </ul>
-			</div>
-			<div class="btn-group">
-			  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			    ABOUT <span class="caret"></span>
-			  </button>
-			  <ul class="dropdown-menu">
-			    <li><a href="#">Action</a></li>
-			    <li><a href="#">Another action</a></li>			    
-			  </ul>
+    		<div class="nav">
+	    		<img src="images/logo.jpg" alt="logo">
+	    		<div class="empty"></div>
+	    		<a href="index.html">HOME</a>
+	    		<a href="index.html">PRODUCT</a>
+	    		<a href="index.html">SUPPORT</a>
+	    		<a href="index.html">ABOUT</a>
+
+	    		<!-- <div class="btn-group">
+				  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				    PRODUCT <span class="caret"></span>
+				  </button>
+				  <ul class="dropdown-menu">
+				    <li><a href="#">Action</a></li>
+				    <li><a href="#">Another action</a></li>			    
+				  </ul>
+				</div> -->				
 			</div>
     	</nav>
-    	</div>
-    	<div style="height:45px;"></div>
+    	<div style="height:50px;"></div>
     	<div class="top_image">
-    		<img src="images/top1.png" alt="">
-    		<img src="images/top2.png" alt="">
+    		<div class="fill_in_1"></div>
+    		<div class="banner">
+    			<p class="text1">HELLO<br/>WORLD</p>
+    			<p class="text2">PRODUCT</p>
+    		</div>    		
+    		<img id="top2img" src="images/top2.jpg" alt="">
+    		<div class="fill_in_1"></div>
+
     	</div>
     	<div></div>
     	<div class='main'>
     		<div class="content">
     			<div class="little_block_content">
     				<div class="little_block">
+    					<img src="images/one.jpg" alt="one" />
     					<h3>One</h3>
     					<p class="sub_title">Level2 Title</p>
-    					<img src="images/one.jpg" alt="one">
+    					
     					<p>Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text</p>
     				</div>
     				<div class="little_block">
+    					<img src="images/two.jpg" alt="two">
     					<h3>Two</h3>
     					<p class="sub_title">Level2 Title</p>
-    					<img src="images/two.jpg" alt="one">
     					<p>Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text</p>
     				</div>
     				<div class="little_block">
+    					<img src="images/three.jpg" alt="three">
     					<h3>Three</h3>
-    					<p class="sub_title">Level2 Title</p>
-    					<img src="images/three.jpg" alt="one">
+    					<p class="sub_title">Level2 Title</p>   					
     					<p>Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text</p>
     				</div>
     			</div>
@@ -75,15 +69,16 @@
     			<div class="blank"></div>   			
 				<ul class="nav nav-tabs">
 				  <li role="presentation" class="active"><a href="#">TABONE</a></li>
-				  <li role="presentation"><a href="#">TABTWO</a></li>
-				  <li role="presentation"><a href="#">TABTHR</a></li>
-				  <li role="presentation"><a href="#">TABFOR</a></li>
+				  <li role="presentation" class="active"><a href="#">TABTWO</a></li>
+				  <li role="presentation"  class="active"><a href="#">TABTHR</a></li>
+				  <li role="presentation"  class="active"><a href="#">TABFOR</a></li>
 				</ul>
 				<div class="table_content">
-					<p>Table Caption</p>
 					<div class="blank"></div>
-					<table class="table table-striped">
-						<th><td>Free Version</td><td class="yellow">Personal Version</td><td>Company Version</td></th>
+					<p><b>Table Caption</b></p>
+					<div class="blank"></div>
+					<table class="table">
+						<tr><th class="yellow"></th><th>Free Version</th><th class="yellow">Personal Version</th><th>Company Version</th></tr>
 						<tr><td class="yellow aside">Feature A</td><td>Some text Some text Some text Some text</td><td class="yellow">Some text Some text Some text Some text</td><td>Some text Some text Some text Some text</td></tr>
 						<tr><td class="yellow aside">Feature B</td><td>Some text Some text Some text Some text</td><td class="yellow">Some text Some text Some text Some text</td><td>Some text Some text Some text Some text</td></tr>
 						<tr><td class="yellow aside">Feature C</td><td>Some text Some text Some text Some text</td><td class="yellow">Some text Some text Some text Some text</td><td>Some text Some text Some text Some text</td></tr>
@@ -91,14 +86,18 @@
 						<tr><td class="yellow aside">Price</td><td>Free</td><td class="yellow">$9.99</td><td>$99.9</td></tr>
 					</table>
 				</div>
-				<div class="form-content">
-					<form action="">
-						<input type="droplist" value="blank">
-						<input type="droplist" value="blank">
-						<input type="droplist" value="blank">
-						<input type="submit">
-					</form>
+				<div class="form_column">
+					<div class="form-content">
+						<form action="">
+							<input type="droplist" value="blank">
+							<input type="droplist" value="blank">
+							<input type="droplist" value="blank">
+							<input class="submit" type="submit">
+						</form>
+					</div>
+					<img class="hands" src="images/hands.jpg" alt="img" />
 				</div>
+				
 				<div class="blank"></div>
 				<footer>&copy;2017 IFE</footer>
     		</div>
