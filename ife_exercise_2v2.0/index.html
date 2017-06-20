@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link type="text/css" rel="stylesheet" href="main.css" />
+        <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </head>
+    <body>
+    	<!-- 导航栏 -->
+    	<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+    		<div class="nav">
+	    		<img class="logo" src="images/glass.jpg" alt="logo">
+	    		<!-- 占位的空div -->
+	    		<div class="empty"></div>
+	    		<!-- 对于以下ul，通过尝试，个人的理解是把.navbar-nav设成display:flex清除掉了bootstrap里设置的左浮动，否则 -->
+	    		<ul class="nav navbar-nav">
+			        <li class="active"><a href="#">HOME</a></li>
+			        <li class="dropdown">
+			            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PRODUCT <span class="caret"></span></a>
+			            <ul class="dropdown-menu">
+			              <li><a href="#">Action</a></li>
+			              <li><a href="#">Another action</a></li>
+			              <li><a href="#">Something else here</a></li>
+			            <!-- <li role="separator" class="divider"></li> -->
+			            <!-- <li><a href="#">Separated link</a></li> -->			            
+			            </ul>
+			          </li>
+			          <li class="dropdown">
+				        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SUPPORT <span class="caret"></span></a>
+				        <ul class="dropdown-menu">
+				          <li><a href="#">Action</a></li>
+				          <li><a href="#">Another action</a></li>
+				          <li><a href="#">Something else here</a></li>			            		            
+				        </ul>
+			        </li>
+			        <li class="dropdown">
+				        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ABOUT <span class="caret"></span></a>
+				        <ul class="dropdown-menu">
+				          <li><a href="#">Action</a></li>
+				          <li><a href="#">Another action</a></li>
+				          <li><a href="#">Something else here</a></li>			            		            
+				        </ul>
+			        </li>
+			      </ul>
+			</div>
+    	</nav>
+    	<!-- banner -->
+    	<div class="top_image">
+    		<div class="fill_in_1"></div>
+    		<div class="banner">
+    			<p class="text1">HELLO<br/>WORLD</p>
+    			<p class="text2">PRODUCT</p>
+    		</div>    		
+    		<img id="top2img" src="images/top2.jpg" alt="">
+    		<div class="fill_in_2"></div>
+    	</div>
+
+    	<div class='main'>
+    		<div class="content">
+    			<!-- 三块文字 -->
+    			<div class="little_block_content">
+    				<div class="little_block">
+    					<img src="images/one.jpg" alt="one" />
+    					<h3>One</h3>
+    					<p class="sub_title">Level2 Title</p>
+    					
+    					<p>Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text</p>
+    				</div>
+    				<div class="little_block">
+    					<img src="images/two.jpg" alt="two">
+    					<h3>Two</h3>
+    					<p class="sub_title">Level2 Title</p>
+    					<p>Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text</p>
+    				</div>
+    				<div class="little_block">
+    					<img src="images/three.jpg" alt="three">
+    					<h3>Three</h3>
+    					<p class="sub_title">Level2 Title</p>   					
+    					<p>Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text</p>
+    				</div>
+    			</div>
+    			<!-- 占空间的空div -->
+    			<div class="blank"></div>
+    			<!-- 轮播图片 -->
+    			<div class="center-img">
+    				<img src="images/midpic.jpg" alt="" />
+    			</div>
+    			<div class="blank"></div> 
+    			<!-- tab -->
+				<ul class="nav nav-tabs">
+				  <li class="active"><a href="#">TABONE</a></li>
+				  <li><a href="#">TABTWO</a></li>
+				  <li><a href="#">TABTHR</a></li>
+				  <li><a href="#">TABFOR</a></li>
+				</ul>
+				<!-- table -->
+				<div class="table_content">
+					<table class="table">
+						<caption>Table Caption</caption>				
+						<tr><th class="yellow"></th><th>Free Version</th><th class="yellow">Personal Version</th><th>Company Version</th></tr>
+						<tr><td class="yellow aside">Feature A</td><td>Some text Some text Some text Some text</td><td class="yellow">Some text Some text Some text Some text</td><td>Some text Some text Some text Some text</td></tr>
+						<tr><td class="yellow aside">Feature B</td><td>Some text Some text Some text Some text</td><td class="yellow">Some text Some text Some text Some text</td><td>Some text Some text Some text Some text</td></tr>
+						<tr><td class="yellow aside">Feature C</td><td>Some text Some text Some text Some text</td><td class="yellow">Some text Some text Some text Some text</td><td>Some text Some text Some text Some text</td></tr>
+						<tr><td class="yellow aside">Feature D</td><td>Some text Some text Some text Some text</td><td class="yellow">Some text Some text Some text Some text</td><td>Some text Some text Some text Some text</td></tr>
+						<tr><td class="yellow aside">Price</td><td style="color:green;">Free</td><td class="yellow" style="color:blue;">$9.99/<sup>mo</sup></td><td style="color:red;">$99.9/<sup>mo</sup></td></tr>
+					</table>
+				</div>
+				<!-- form -->
+				<div class="form_column">
+					<div class="form-content">
+						<form action="">
+							<select name="country" id="country_1">
+								<option value="">select your country</option>
+								<option value="China">China</option>
+								<option value="America">America</option>
+							</select>
+							<select name="country" id="country_2">
+								<option value="">select your country</option>
+								<option value="China">China</option>
+								<option value="America">America</option>
+							</select>
+							<input type="text" value="blank">
+							<input class="submit" type="submit" value="submit">
+						</form>
+					</div>
+					<img class="hands" src="images/hands.jpg" alt="img" />
+				</div>
+				
+				<div class="blank"></div>
+				<footer>&copy;2017 IFE</footer>
+    		</div>
+    	</div>
+    </body>
+</html>

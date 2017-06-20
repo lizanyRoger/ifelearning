@@ -1,0 +1,208 @@
+/*
+* @Author: lj
+* @Date:   2017-06-18 21:18:47
+* @Last Modified by:   lj
+* @Last Modified time: 2017-06-20 22:58:09
+*/
+/*导航栏*/
+nav{
+	width: 100%;
+	display:flex;
+	justify-content: center;
+	align-items: center;	
+}
+.navbar{
+	margin-bottom: 0;
+}
+.nav{
+	width: 960px;
+	display:flex;
+	padding:5px;
+}
+.nav .logo{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	align-self: center;	
+}
+.empty{
+	flex:1;
+}
+
+.nav navbar-nav{
+	margin:10px 10px;
+	color: white;
+	font-size: 16px;
+}
+ul.navbar-nav{
+	display: flex;
+	justify-content: flex-end;
+}
+
+/*banner*/
+.top_image{
+	display:flex;
+	justify-content: center;
+	margin-top: 70px;
+}
+.fill_in_1,.fill_in_2{
+	background-color: rgb(45,112,121);
+	flex:1;
+}
+.banner{
+	min-width: 720px;
+	height: 260px;
+	padding-top: 50px;
+	background: url('images/top1.jpg') no-repeat;
+	background-size: 100% 100%;
+}
+.top_image #top2img{
+	/*min-width:800px;*/
+	min-width: 720px;
+	height:260px;
+}
+.banner p{
+	margin-left:35%;
+}
+.text1{
+	font-size:32px;
+	color:rgba(155,155,155,0.5);
+}
+.text2{
+	font-size:44px;
+	color:white;
+}
+
+/*三块文字*/
+.main{
+	width:100%;
+	display:flex;
+	justify-content: center;
+}
+.content{
+	width: 960px;
+}
+.little_block_content{
+	display:flex;
+	justify-content: space-between;
+}
+.little_block{
+	width:30%;
+	margin-top: 20px;
+	border:1px solid #B4B4B4;
+	padding: 0 10px;
+}
+.little_block h3{
+	font-size: 48px;
+}
+.little_block p{
+	font-size: 16px;
+	text-align: left;
+}
+.little_block .sub_title{
+	font-size: 24px;
+}
+
+.little_block img{
+	float:right;
+	max-height: 80px;
+	max-width: 80px;
+	position: relative;
+	top:20px;
+}
+.center-img{
+	min-width:960px;
+}
+.center-img img{
+	width: 100%;
+}
+
+/*占空间的空div*/
+.blank{
+	height: 30px;
+}
+
+/*tab bootstrap.min.css中基本都设置好了*/
+.nav-tabs li{
+	font-size: 24px;
+	width: 25%;
+}
+.nav-tabs li a{
+	color:black;
+	text-align: center;
+}
+/*table*/
+.table caption{
+	color:black;
+	font-size: 18px;
+	font-weight: bold;
+	margin:30px 0;
+}
+.table th,.table .aside{
+	font-weight:bold;
+	font-size:18px;
+	text-align: center;
+	vertical-align: middle;
+	height: 50px;
+}
+.table td{
+	font-size: 14px;
+	width: 240px;
+	height: 50px;
+	text-align: center;
+	vertical-align: middle;
+}
+.table .yellow{
+	background-color: #EAE8E8;
+}
+
+/*form*/
+.form_column{
+	display: flex;
+	flex-wrap: nowrap;
+}
+.form-content{
+	width: 500px;
+	height: 200px;
+	padding-top: 20px;
+	background-image: url("images/form-background.jpg");
+	background-size: 100%;
+	flex:1;
+}
+.form-content select{
+	display: block;
+	margin-left:50px;
+	margin-top: 10px;
+	width:200px;
+	height: 30px;
+}
+.form-content select,.form-content option,.form-content input{
+	color:#CCCCCC;
+}
+.form-content input{
+	display: inline;
+	margin-left:50px;
+	margin-top: 10px;
+	width:200px;
+	height:30px;
+}
+.form-content .submit{
+	display:inline;
+	/*margin-left: 20px;*/
+	background: -webkit-linear-gradient(bottom,#6392FD,#ffffff);
+	width: 100px;
+	height:30px;
+	border-radius: 5px;
+	color:white;
+
+}
+.form-content .submit :hover{
+	border-bottom:solid 1px #333;
+}
+.hands{
+	width: 400px;
+}
+footer{
+	font-size:14px;
+	text-align: center;
+}
