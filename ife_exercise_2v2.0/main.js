@@ -1,18 +1,19 @@
-var droplist = document.getElementsByClassName("droplist");
-for(var i=0;i<droplist.length;i++){
-	droplist[i].style.visibility = "collapse";
-}
+// js实现nav方法，还未完全实现
+// var droplist = document.getElementsByClassName("droplist");
+// for(var i=0;i<droplist.length;i++){
+// 	droplist[i].style.visibility = "collapse";
+// }
 
-function occur_droplist(obj){
-	obj.style.background = "#575757";
-	obj.style.height = "100%";
-	//obj.lastChild.style.visibility = "visible";
-}
+// function occur_droplist(obj){
+// 	obj.style.background = "#575757";
+// 	obj.style.height = "100%";
+// 	//obj.lastChild.style.visibility = "visible";
+// }
 
-function disappear_droplist(obj){
-	obj.style.background = "inherit";
-	//obj.lastChild.style.visibility = "visible";
-}
+// function disappear_droplist(obj){
+// 	obj.style.background = "inherit";
+// 	//obj.lastChild.style.visibility = "visible";
+// }
 
 function nav_click(obj){
 
