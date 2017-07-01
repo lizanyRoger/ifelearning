@@ -18,20 +18,20 @@ function disappear_droplist(obj){
 //js实现轮播图
 var wrap = document.querySelector(".carousel-wrap");
 var index = 0;
+var timer = null;
 var dots = document.getElementsByClassName("carousel-tip");
 
 function showCurrentDot () {
-  for(var i = 0, len = dots.length; i < len; i++){
-    dots[i].style.className = "carousel-tip";
+  for(var i = 0; i < dots.length; i++){
+    dots[i].className = "carousel-tip";
   }
-  dots[index].style.className = "carousel-tip carousel-tip-active";
-  dots[index].style.background = "#4E4E4E";
-  dots[index].style.color = "#4E4E4E";
+  dots[index].className = "carousel-tip carousel-tip-active";
+
 }
 
-function next_pic () {
+function next_pic () {  //直接变为下一张图片，无效果
       var newLeft;
-      if(wrap.style.left === "-3840px"){
+      if(wrap.style.left === "-2880px"){
         newLeft = 0;
       }else{
         newLeft = parseInt(wrap.style.left)-960;
@@ -44,12 +44,30 @@ function next_pic () {
       showCurrentDot();
     }
 
-var timer = null;
-    function autoPlay () {
-      timer = setInterval(function () {
-        next_pic();
-      },2000);
-    }
+
+function slide_next_pic() {  //滑动到下一张图片
+	var time = setInterval(function() {
+		 wrap.style.left = (parseInt(wrap.style.left)-10) +'px';
+		 
+		 if((parseInt(wrap.style.left)%960)===0){
+		 	clearInterval(time);
+		 	index++;
+		 	if( wrap.style.left === "-3840px"){
+		 		wrap.style.left = "0px";
+		 		index = 0;
+		 	}
+		 	showCurrentDot();
+		 }
+	},5);
+
+}
+
+function autoPlay () {
+  timer = setInterval(function () {
+    slide_next_pic();
+  },2000);
+}
+
 autoPlay();
 
 //js实现tab

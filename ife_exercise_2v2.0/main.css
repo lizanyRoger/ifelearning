@@ -2,7 +2,7 @@
 * @Author: lj
 * @Date:   2017-06-18 21:18:47
 * @Last Modified by:   lj
-* @Last Modified time: 2017-06-29 23:29:18
+* @Last Modified time: 2017-07-01 16:22:37
 */
 /*导航栏*/
 nav{
@@ -169,8 +169,8 @@ ul.navbar-nav{
 
 .carousel-container {
       position: relative;
-      height: 166px;      
-      box-shadow: 0 0 5px green;
+      height: 166px;
+      box-shadow: 0 0 5px #A0A0A0;
       overflow: hidden;
     }
 .carousel-wrap {
@@ -185,22 +185,23 @@ ul.navbar-nav{
     height: 166px;
     }
 .carousel-tips {
-	width: 150px;
-	height: 5px;
+	display:flex;
+	justify-content: center;
+	width: 100px;
+	height: 2px;
 	margin: 0 auto 50px auto;
 }
 .carousel-tip {
-	display: inline;
-	width: 15px;
+	float:left;
+	flex:1;
+	width: 20px;
 	height: 2px;
+	margin:auto 2px;
 	font-size: 2px;
 	line-height: 2px;
-	color:#A0A0A0;
 	background-color: #A0A0A0;
-	background-size: 100% 100%;
 }
 .carousel-tip-active {
-	color:#4E4E4E;
 	background-color: #4E4E4E;
 }
 /*占空间的空div*/
