@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link type="text/css" rel="stylesheet" href="main.css" />
+        
+    </head>
+    <body>
+    	<!-- 导航栏 -->
+    	<nav class="navbar navbar-default navbar-inverse">
+    		<div class="nav">
+	    		<img class="logo" src="images/glass.jpg" alt="logo">
+	    		<!-- 占位的空div -->
+	    		<div class="empty"></div>
+	    		<!-- 对于以下ul，通过尝试，个人的理解是把.navbar-nav设成display:flex清除掉了bootstrap里设置的左浮动，否则 -->
+	    		<ul class="nav navbar-nav">
+			        <li class="nav-module"><a href="#" class="nav-title first-title">HOME</a></li>
+			        <li class="dropdown nav-module">
+			            <a href="#"  class="nav-title">PRODUCT <span class="glyphicon glyphicon-chevron-down"></span></a>
+			            <ul class="droplist">
+			              <li class="droplist-1"><a href="#">Action</a></li>
+			              <li class="droplist-1"><a href="#">Another action</a></li>
+			              <li class="droplist-1"><a href="#">Something else here</a></li>
+			            <!-- <li role="separator" class="divider"></li> -->
+			            <!-- <li><a href="#">Separated link</a></li> -->			            
+			            </ul>
+			          </li>
+			          <li class="dropdown nav-module">
+				        <a href="#"  class="nav-title">SUPPORT <span class="glyphicon glyphicon-chevron-down"></span></a>
+				        <ul class="droplist">
+				          <li class="droplist-1"><a href="#">Action</a></li>
+			              <li class="droplist-1"><a href="#">Another action</a></li>
+			              <li class="droplist-1"><a href="#">Something else here</a></li>			            		            
+				        </ul>
+			        </li>
+			        <li class="dropdown nav-module">
+				        <a href="#"  class="nav-title">ABOUT <span class="glyphicon glyphicon-chevron-down"></span></a>
+				        <ul class="droplist">
+				          <li class="droplist-1"><a href="#">Action</a></li>
+			              <li class="droplist-1"><a href="#">Another action</a></li>
+			              <li class="droplist-1"><a href="#">Something else here</a></li>	            		            
+				        </ul>
+			        </li>
+			      </ul>
+			</div>
+    	</nav>
+    	<!-- banner -->
+    	<div class="top_image">
+    		<div class="fill_in_1"></div>
+    		<div class="banner">
+    			<p class="text1">HELLO<br/>WORLD</p>
+    			<p class="text2">PRODUCT</p>
+    		</div>    		
+    		<img id="top2img" src="images/top2.jpg" alt="">
+    		<div class="fill_in_2"></div>
+    	</div>
+
+    	<div class='main'>
+    		<div class="page-nav" onmouseover="modify_page_nav()" onmouseout="recover_page_nav()">
+    			<div class="page-nav-item page-nav-active">Level 1 Some Text</div>
+    			<div class="page-nav-item">Level 1 Some Text</div>
+    			<div class="page-nav-item">Level 1 Some Text</div>
+    			<div class="page-nav-item">Level 1 Some Text</div>
+    			<div class="page-nav-item">Level 1 Some Text</div>
+    			<div class="page-nav-item">Level 1 Some Text</div>
+    			<div class="page-nav-item">Level 1 Some Text</div>
+    			<div class="page-nav-item">Level 1 Some Text</div>
+    			<div class="page-nav-item">Level 1 Some Text</div>
+    			<div class="page-nav-item">Level 1 Some Text</div>
+    			<div class="page-nav-item">Level 1 Some Text</div>
+    			<div class="page-nav-item">Level 1 Some Text</div>
+    			<div class="page-nav-item">Level 1 Some Text</div>
+    			<div class="page-nav-item">Level 1 Some Text</div>
+    			<!-- <div class="page-nav-item">Level 1 Some Text</div> -->
+    		</div>
+    		<div class="content">
+    			<div class="page-content">
+    				<table class="page-table">
+    					<thead>
+    						<tr class="thead-row"><th>TableHead</th><th>TableHead</th><th>Head</th><th>TableHead</th></tr>
+    					</thead>
+    					<tbody>
+    						<tr><td>Content Text</td><td>Content Text Text</td><td>123.432</td><td><button class="table-button">btn</button>
+    							<button class="table-button">btn</button><button class="table-button">btn</button></td></tr>
+    						<tr><td>Content Text</td><td>Content Text Text</td><td>123.432</td><td><button class="table-button">btn</button>
+    							<button class="table-button">btn</button><button class="table-button">btn</button></td></tr>
+    						<tr><td>Content Text</td><td>Content Text Text</td><td>123.432</td><td><button class="table-button">btn</button>
+    							<button class="table-button">btn</button><button class="table-button">btn</button></td></tr>
+    						<tr><td>Content Text</td><td>Content Text Text</td><td>123.432</td><td><button class="table-button">btn</button>
+    							<button class="table-button">btn</button><button class="table-button">btn</button></td></tr>
+    						<tr><td>Content Text</td><td>Content Text Text</td><td>123.432</td><td><button class="table-button">btn</button>
+    							<button class="table-button">btn</button><button class="table-button">btn</button></td></tr>
+    						<tr><td>Content Text</td><td>Content Text Text</td><td>123.432</td><td><button class="table-button">btn</button>
+    							<button class="table-button">btn</button><button class="table-button">btn</button></td></tr>
+    						<tr><td>Content Text</td><td>Content Text Text</td><td>123.432</td><td><button class="table-button">btn</button>
+    							<button class="table-button">btn</button><button class="table-button">btn</button></td></tr>
+    						<tr><td>Content Text</td><td>Content Text Text</td><td>123.432</td><td><button class="table-button">btn</button>
+    							<button class="table-button">btn</button><button class="table-button">btn</button></td></tr>
+    						<tr><td>Content Text</td><td>Content Text Text</td><td>123.432</td><td><button class="table-button">btn</button>
+    							<button class="table-button">btn</button><button class="table-button">btn</button></td></tr>
+    						<tr><td>Content Text</td><td>Content Text Text</td><td>123.432</td><td><button class="table-button">btn</button>
+    							<button class="table-button">btn</button><button class="table-button">btn</button></td></tr>
+    						<tr><td>Content Text</td><td>Content Text Text</td><td>123.432</td><td><button class="table-button">btn</button>
+    							<button class="table-button">btn</button><button class="table-button">btn</button></td></tr>
+    						<tr><td>Content Text</td><td>Content Text Text</td><td>123.432</td><td><button class="table-button">btn</button>
+    							<button class="table-button">btn</button><button class="table-button">btn</button></td></tr>
+    						<tr><td>Content Text</td><td>Content Text Text</td><td>123.432</td><td><button class="table-button">btn</button>
+    							<button class="table-button">btn</button><button class="table-button">btn</button></td></tr>
+    						<tr><td>Content Text</td><td>Content Text Text</td><td>123.432</td><td><button class="table-button">btn</button>
+    							<button class="table-button">btn</button><button class="table-button">btn</button></td></tr>
+    						<tr><td>Content Text</td><td>Content Text Text</td><td>123.432</td><td><button class="table-button">btn</button>
+    							<button class="table-button">btn</button><button class="table-button">btn</button></td></tr>
+    						<tr><td>Content Text</td><td>Content Text Text</td><td>123.432</td><td><button class="table-button">btn</button>
+    							<button class="table-button">btn</button><button class="table-button">btn</button></td></tr>
+    						<tr><td>Content Text</td><td>Content Text Text</td><td>123.432</td><td><button class="table-button">btn</button>
+    							<button class="table-button">btn</button><button class="table-button">btn</button></td></tr>
+    						<tr><td>Content Text</td><td>Content Text Text</td><td>123.432</td><td><button class="table-button">btn</button>
+    							<button class="table-button">btn</button><button class="table-button">btn</button></td></tr>
+    						<tr><td>Content Text</td><td>Content Text Text</td><td>123.432</td><td><button class="table-button">btn</button>
+    							<button class="table-button">btn</button><button class="table-button">btn</button></td></tr>
+    						<tr><td>Content Text</td><td>Content Text Text</td><td>123.432</td><td><button class="table-button">btn</button>
+    							<button class="table-button">btn</button><button class="table-button">btn</button></td></tr>
+    						<tr><td>Content Text</td><td>Content Text Text</td><td>123.432</td><td><button class="table-button">btn</button>
+    							<button class="table-button">btn</button><button class="table-button">btn</button></td></tr>
+    						<tr><td>Content Text</td><td>Content Text Text</td><td>123.432</td><td><button class="table-button">btn</button>
+    							<button class="table-button">btn</button><button class="table-button">btn</button></td></tr>
+    					</tbody>
+    				</table>
+    			</div>
+    			<div class="page-content"></div>
+    			<div class="page-content"></div>
+    		</div>
+    	</div>
+    	<script src="./main.js"></script>
+    </body>
+</html>
