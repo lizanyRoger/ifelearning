@@ -2,7 +2,7 @@
 * @Author: lj
 * @Date:   2017-06-18 21:18:47
 * @Last Modified by:   lj
-* @Last Modified time: 2017-07-02 22:20:15
+* @Last Modified time: 2017-07-03 22:42:27
 */
 /*导航栏*/
 nav{
@@ -165,13 +165,16 @@ ul.navbar-nav{
 	flex:5 5 auto;
 }*/
 .page-table th:nth-child(1){
-	flex:8 8 auto;
+	width: 23%;
+	/*flex:8 8 auto;*/
 }
 .page-table th:nth-child(2),.page-table th:nth-child(4){
-	flex:11 11 auto;
+	width: 31%;
+	/*flex:11 11 auto;*/
 }
 .page-table th:nth-child(3){
-	flex:5 5 auto;
+	width: 15%;
+	/*flex:5 5 auto;*/
 }
 .page-table td{
 	height:40px;
