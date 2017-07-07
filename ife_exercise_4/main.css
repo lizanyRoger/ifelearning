@@ -186,16 +186,24 @@ ul.navbar-nav{
     left: 0;
     z-index: 10;
 }
-.edit-layout{
+.edit-layout,.delete-layout{
 	display: none;	
 	position:fixed;
 	top:30%;
 	left: 40%;
 	z-index: 20;
 	width:400px;
-	height: 200px;
+	height: 250px;
 	background: #FFF; 
 }
 .edit-layout input{
 	display:block;
+	margin:5px auto;
+}
+.edit-layout label{
+	display: inline-block;
+	margin-left:30px;
+}
+.edit-layout button:nth-child(1){
+	/*margin:5px 10px;*/
 }
