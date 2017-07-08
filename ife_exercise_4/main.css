@@ -2,7 +2,7 @@
 * @Author: lj
 * @Date:   2017-06-18 21:18:47
 * @Last Modified by:   lj
-* @Last Modified time: 2017-07-07 22:52:23
+* @Last Modified time: 2017-07-08 16:25:20
 */
 /*导航栏*/
 nav{
@@ -135,6 +135,21 @@ ul.navbar-nav{
 .page-nav-active{
 	background: #A8A8A8;
 }
+
+/*导航二级菜单*/
+.nav-second-level{
+	display:none;
+}
+.nav-second-active{
+	display: block;
+}
+.nav-second-level li,.nav-second-active li{
+	list-style: none;
+	height:40px;	
+	text-align: center;
+	padding: 10px 0 10px 0;
+}
+
 .content {
 	flex:3 1 auto;
 }
@@ -151,12 +166,6 @@ ul.navbar-nav{
 	/*display: flex;*/
 	width: 100%;
 }
-/*导航二级菜单*/
-.nav-second-level{
-	visibility: collapse;
-}
-
-
 .page-table th:nth-child(1){
 	width: 23%;
 	/*flex:8 8 auto;*/

@@ -219,7 +219,7 @@ for(var i=0;i<nav_left_json.data.length;i++){
 			nav_child_item.innerHTML = nav_left_json.data[i].nav_children[j].nav_child;
 			nav_children_item.appendChild(nav_child_item);
 		}
-		nav_item.appendChild(nav_children_item);
 	}
 	nav_left.appendChild(nav_item);
+    nav_left.appendChild(nav_children_item);
 }
