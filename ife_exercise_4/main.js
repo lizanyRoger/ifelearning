@@ -46,6 +46,16 @@ function recover_page_nav(){
   *  exercise 4
   表格 编辑&删除
   */
+function show_mask(){
+	var background = document.getElementsByClassName("mask")[0];
+	background.style.display = "block";
+	background.style.height = document.body.offsetHeight + 'px';
+	background.style.width = document.body.offsetWidth + 'px';
+	background.style.background = "rgba(125,125,125,0.5)";
+	
+	var body = document.getElementsByTagName("body")[0];
+	body.style.overflow = "hidden";
+}
 
 function hide_edit_mask(){
 	document.getElementsByClassName("mask")[0].style.display = "none";
@@ -59,71 +69,52 @@ function hide_delete_mask(){
 	document.getElementsByTagName("body")[0].style.overflow = "scroll";
 }
 
+//为表格编辑按钮添加click事件
 var edit_button = document.getElementsByClassName("edit");
 for(var x=0; x<edit_button.length;x++){
 	edit_button[x].onclick = function mask(){
-		var background = document.getElementsByClassName("mask")[0];
-		background.style.display = "block";
-		background.style.height = document.body.offsetHeight + 'px';
-		background.style.width = document.body.offsetWidth + 'px';
-		background.style.background = "rgba(125,125,125,0.5)";
-		
-		var body = document.getElementsByTagName("body")[0];
-		body.style.overflow = "hidden";
-
+		show_mask();
 		var edit_layout = document.getElementsByClassName("edit-layout")[0];
 		edit_layout.style.display = "block";
+		
+		//为编辑界面的input设value
+		var edit_tr = this.parentNode.parentNode;
+		document.getElementsByName("Name")[0].value = edit_tr.children[0].innerHTML;
+		document.getElementsByName("Content")[0].value = edit_tr.children[1].innerHTML;
+		document.getElementsByName("Value")[0].value = edit_tr.children[2].innerHTML;
 
-		var edit_name = document.getElementsByTagName("tr")[x].children[0].innerHTML;
-		var edit_content = document.getElementsByTagName("tr")[x].children[1].innerHTML;
-		var edit_value = document.getElementsByTagName("tr")[x].children[2].innerHTML;
-		document.getElementsByName("Name")[0].value = edit_name;
-		document.getElementsByName("Content")[0].value = edit_content;
-		document.getElementsByName("Value")[0].value = edit_value;
-
+		//提交编辑的value
 		var edit_submit = document.getElementById("submit-edit");
 		edit_submit.onclick = function edit_submit(){
-			document.getElementsByTagName("tr")[x].children[0].innerHTML = 
-				document.getElementsByName("Name")[0].value;
-			document.getElementsByTagName("tr")[x].children[1].innerHTML = 
-				document.getElementsByName("Content")[0].value;
-			document.getElementsByTagName("tr")[x].children[2].innerHTML = 
-				document.getElementsByName("Value")[0].value;
+			edit_tr.children[0].innerHTML = document.getElementsByName("Name")[0].value;
+			edit_tr.children[1].innerHTML = document.getElementsByName("Content")[0].value;
+			edit_tr.children[2].innerHTML = document.getElementsByName("Value")[0].value;
 			hide_edit_mask();
 		};
 
-	};
-
-	var edit_cancel = document.getElementById("cancel-edit");
+	};	
+}
+//取消编辑
+var edit_cancel = document.getElementById("cancel-edit");
 	edit_cancel.onclick = function edit_cancel(){
 		hide_edit_mask();
 	};
-}
 
+//为表格删除按钮添加click事件
 var delete_button = document.getElementsByClassName("delete");
 for(var x=0; x<delete_button.length;x++){
 	delete_button[x].onclick = function mask(){
-		var background = document.getElementsByClassName("mask")[0];
-		background.style.display = "block";
-		background.style.height = document.body.offsetHeight + 'px';
-		background.style.width = document.body.offsetWidth + 'px';
-		background.style.background = "rgba(125,125,125,0.5)";
-		
-		var body = document.getElementsByTagName("body")[0];
-		body.style.overflow = "hidden";
+		show_mask();
+		var delete_layout = document.getElementsByClassName("delete-layout")[0];
+		delete_layout.style.display = "block";
 
-		var edit_layout = document.getElementsByClassName("delete-layout")[0];
-		edit_layout.style.display = "block";
-
-		var edit_name = document.getElementsByTagName("tr")[x].children[0].innerHTML;
-		
-		document.getElementsByName("Name")[0].value = edit_name;
+		var delete_tr = this.parentNode.parentNode;
+		var edit_name = delete_tr.children[0].innerHTML;
+		document.getElementById("delete-name").innerHTML = edit_name;		
 		
 		var delete_submit = document.getElementById("submit-delete");
 		delete_submit.onclick = function delete_submit(){
-			//add removeNode();
-			//var delete_node = document.getElementsBy
-			//removeObj.parentNode.removeChild(removeObj)
+			delete_tr.parentNode.removeChild(delete_tr);
 			hide_delete_mask();
 		};
 
