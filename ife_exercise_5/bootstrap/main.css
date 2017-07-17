@@ -1,0 +1,88 @@
+/*
+* @Author: lj
+* @Date:   2017-07-16 16:32:04
+* @Last Modified by:   lj
+* @Last Modified time: 2017-07-17 23:07:33
+*/
+
+
+/*导航栏*/
+.navbar {
+	border-radius: 0;
+	margin-bottom: 0;
+}
+.navbar-nav {
+	float: right;
+}
+.nav-list {
+	font-size: 18px;
+}
+/*inherit bootstrap*/
+.navbar-inverse .navbar-nav > li > a {
+  color: #fff;
+}
+
+/*巨幕*/
+.jumbotron{
+	width:100%;
+	height:300px;
+	background: url('../images/bootstrap.jpg') no-repeat;
+	background-size: 100% 100%;
+}
+
+/*缩略图*/
+.thumbnail{
+	padding:0;
+	border:0;
+}
+.text{
+	position: absolute;
+	bottom: 20px;
+	width: 100%;
+	padding-left:20%;
+	color: #fff;
+	background-color: rgba(56,56,56,0.5);
+}
+.text h3, .newpic-text h3{
+	font-size: 18px;
+	word-spacing: 5px;
+	letter-spacing: 2px;
+}
+.text p, .newpic-text p{
+	font-size: 14px;
+}
+
+/*右侧竖框*/
+#content > .col-md-4 {
+	padding-right: 50px;
+}
+.newpic-text{
+	position: absolute;
+	top: 7%;
+	padding-left: 20%;
+	color: #fff;
+	background-color: rgba(56,56,56,0.5);
+}
+.news h5{
+	font-size: 16px;
+	font-weight: 600;
+}
+.news p{
+	padding-bottom: 5px;
+	font-size: 14px;
+	color: #B5B5B5;
+}
+
+/*左侧图片&文字*/
+.col-md-5 > img{
+	width: 100%;	
+}
+
+/*footer*/
+footer{
+	width:100%;
+	height: 100px;
+	padding-top: 30px;
+	text-align: center;
+	background: #B5B5B5;
+}
